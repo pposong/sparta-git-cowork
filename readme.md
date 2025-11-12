@@ -2,26 +2,32 @@
 
 Git 커밋 협업을 통한 팀원 소개 페이지 프로젝트입니다.
 
+![main image](./image/main.png)
+
 ## 프로젝트 구조
 
 ```
-ryankor.github.io/
+sparta-git-cowork/
 ├── index.html          # 팀원 목록 페이지
-├── member.html         # 개별 팀원 상세 페이지
 ├── members/           # 팀원 정보 JSON 파일 디렉토리
 │   ├── members.json   # 팀원 목록 파일
+│   ├── member1.json  # 템플릿 1 (프론트엔드 개발자)
+│   ├── member2.json  # 템플릿 2 (백엔드 개발자)
+│   ├── member3.json  # 템플릿 3 (UI/UX 디자이너)
+│   ├── member4.json  # 템플릿 4 (풀스택 개발자)
+│   ├── member5.json  # 템플릿 5 (데이터 분석가)
 │   └── example.json   # 예시 팀원 정보
 └── image/             # 이미지 파일 디렉토리
 ```
 
-## Git 협업 가이드
+## 시작하기
 
 ### 1. 저장소 클론 및 브랜치 생성
 
 ```bash
 # 저장소 클론
 git clone <repository-url>
-cd ryankor.github.io
+cd sparta-git-cowork
 
 # 새 브랜치 생성 (본인의 이름 또는 아이디로)
 git checkout -b add-member-<your-name>
@@ -29,10 +35,28 @@ git checkout -b add-member-<your-name>
 
 ### 2. 본인의 팀원 정보 추가
 
+**방법 1: 기존 템플릿 활용 (추천)**
+
+1. `members/` 디렉토리에서 본인과 가장 유사한 역할의 템플릿을 선택합니다:
+   - `member1.json` - 프론트엔드 개발자
+   - `member2.json` - 백엔드 개발자
+   - `member3.json` - UI/UX 디자이너
+   - `member4.json` - 풀스택 개발자
+   - `member5.json` - 데이터 분석가
+
+2. 선택한 템플릿 파일을 복사하여 본인의 JSON 파일을 생성합니다:
+   ```bash
+   cp members/member1.json members/본인아이디.json
+   ```
+
+3. 생성한 JSON 파일을 열어 본인의 정보로 수정합니다.
+
+**방법 2: 처음부터 작성**
+
 1. `members/` 디렉토리에 본인의 JSON 파일을 생성합니다.
    - 파일명: `본인아이디.json` (예: `honggildong.json`)
 
-2. `members/example.json` 파일을 참고하여 본인의 정보를 작성합니다.
+2. 아래 템플릿을 참고하여 본인의 정보를 작성합니다.
 
 ```json
 {
@@ -96,13 +120,21 @@ git checkout -b add-member-<your-name>
 ```json
 {
   "members": [
-    "example.json",
+    "member1.json",
+    "member2.json",
+    "member3.json",
+    "member4.json",
+    "member5.json",
     "your-id.json"
   ]
 }
 ```
 
+   **중요**: 배열의 순서는 자유롭게 배치할 수 있습니다. 기존 템플릿들은 유지하고, 본인 파일만 추가하세요.
+
 4. 프로필 이미지를 `image/` 디렉토리에 추가합니다 (선택사항).
+   - 파일명: `본인아이디.png` 또는 `본인아이디.jpg`
+   - JSON 파일에서 `profileImage` 필드를 수정: `"image/본인아이디.png"`
 
 ### 3. 변경사항 커밋 및 푸시
 
@@ -149,17 +181,30 @@ git push origin add-member-<your-name>
 # 1. 브랜치 생성
 git checkout -b add-member-kim
 
-# 2. JSON 파일 생성
-# members/kim.json 파일 생성 및 작성
+# 2. 템플릿 복사 (프론트엔드 개발자인 경우)
+cp members/member1.json members/kim.json
 
-# 3. members.json 업데이트
+# 3. JSON 파일 수정
+# members/kim.json 파일을 열어 본인 정보로 수정
+
+# 4. members.json 업데이트
 # members/members.json에 "kim.json" 추가
 
-# 4. 커밋 및 푸시
+# 5. 커밋 및 푸시
 git add members/kim.json members/members.json
 git commit -m "Add: 김철수 팀원 정보 추가"
 git push origin add-member-kim
 ```
+
+### 템플릿별 역할 안내
+
+- **member1.json** (김개발): 프론트엔드 개발자 - React, TypeScript 중심
+- **member2.json** (이백엔드): 백엔드 개발자 - Node.js, Python 중심
+- **member3.json** (박디자인): UI/UX 디자이너 - Figma, Adobe XD 중심
+- **member4.json** (최풀스택): 풀스택 개발자 - React, Node.js 모두
+- **member5.json** (정데이터): 데이터 분석가 - Python, SQL, 머신러닝 중심
+
+본인의 역할과 가장 유사한 템플릿을 선택하여 수정하시면 됩니다!
 
 ## 문의
 

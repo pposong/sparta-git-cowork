@@ -134,7 +134,6 @@
             box-shadow: 0 0.25rem 0.25rem var(--shadow-color);
             padding: 2rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -203,20 +202,6 @@
             font-size: 0.75rem;
         }
 
-        .member-link {
-            margin-top: auto;
-            padding: 0.8rem 1.5rem;
-            background-color: var(--main-organization-color);
-            color: var(--highlight-color);
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .member-link:hover {
-            background-color: var(--secondary-font-color);
-        }
 
         .loading {
             text-align: center;
@@ -349,9 +334,6 @@
         function renderMemberCard(member, container) {
             const card = document.createElement('div');
             card.className = 'member-card';
-            card.onclick = () => {
-                window.location.href = `member.html?id=${member.id}`;
-            };
 
             // 프로필 이미지
             const profileImg = member.profileImage || 'image/profile_image.png';
@@ -377,7 +359,6 @@
                 <div class="member-skills">
                     ${topSkills.map(skill => `<span class="skill-tag font-regular">${skill}</span>`).join('')}
                 </div>
-                <a href="member.html?id=${member.id}" class="member-link font-regular">자세히 보기</a>
             `;
 
             container.appendChild(card);
