@@ -1,0 +1,57 @@
+{
+  "id": "shinhyeonmin",
+  "name": "신현민",
+  "subName": "백엔드개발자",
+  "profileImage": "image/sinhyeonmin.jpg",
+  "introduction": {
+    "quote": "Spring 3기 7조 신현민",
+    "detail": "백엔드 개발을 전문적으로 합니다, 이번 작업은 재능기부로 무상제공합니다."
+  },
+  "info": {
+    "description": "25살 신현민",
+    "birthday": "2002.01.16",
+    "location": "인천시 계양구",
+    "email": "hyenmin5@gmail.com",
+    "phone": "010-3483-1032"
+  },
+  "strengths": ["배려심", "도전 정신", "끈기" 
+  ],
+  "skills": [
+    { "name": "HTML", "progress": 10 },
+    { "name": "CSS", "progress": 10 },
+    { "name": "JavaScript", "progress": 15 }
+  ],
+  "licenses": ["없음"],
+  "education": [
+    {
+      "name": "스파르타 캠프",
+      "period": "2025.12~29 ~ 2026.06.23",
+      "gpa": "1.0",
+      "location": "서울시 강남구"
+    }
+  ],
+  "experience": [
+    {
+      "period": "6개월",
+      "company": "회사명",
+      "term": "2023.01~2023.06",
+      "team": "개발팀, 개발자",
+      "task": "백엔드 개발",
+      "project": {
+        "name": "협업을 위한 git활용",
+        "term": "2026.01.06~2026.01.07",
+        "detail": "git을 활용하여 팀원들과 협업을 하여 실제 현업과 가장 유사한 협업 흐름을 경험해보세요"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "맛집관리 API 만들기",
+      "description": "프론트엔드,벡엔드를 연결하는 API 구조 복습 및 API 명세서를 직접 설계하며, postman을 이용해 Mock서버 구축 후 VO를 활용해 프론트엔드를 구현하여 Mock서버와 연동해 웹 프로젝트의 흐름을 완성시킨다",
+      "image": "image/sinhyeonminpj.png",
+      "link": "project.html"
+    }
+  ]
+}
+
+
