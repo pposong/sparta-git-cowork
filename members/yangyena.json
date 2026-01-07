@@ -1,0 +1,68 @@
+{
+  "id": "yangyena",
+  "name": "양예나",
+  "subName": "프론트엔드 개발자",
+  "profileImage": "image/yangyena.jpg",
+  "introduction": {
+    "quote": "Spring3기 7조 양예나",
+    "detail": "개발자가 되고 싶은 양예나입니다. 비전공자로 아무것도 모릅니다 잘 부탁드립니다."
+  },
+  "info": {
+    "description": "7조 양예나",
+    "birthday": "1996.06.25",
+    "location": "서울시 강남구",
+    "email": "yangyena@example.com",
+    "phone": "010-1111-1111"
+  },
+  "strengths": [
+    "창의성",
+    "협업",
+    "문제해결"
+  ],
+  "skills": [
+    { "name": "HTML", "progress": 80 },
+    { "name": "CSS", "progress": 85 },
+    { "name": "JavaScript", "progress": 90 },
+    { "name": "React", "progress": 85 },
+    { "name": "TypeScript", "progress": 75 }
+  ],
+  "licenses": [
+    "정보처리기사"
+  ],
+  "education": [
+    {
+      "name": "스파르타 고등학교",
+      "period": "2014.03.02 ~ 2017.02.14",
+      "location": "서울시 강남구"
+    },
+    {
+      "name": "스파르타 대학교",
+      "period": "2017.03.02 ~ 2021.02.20",
+      "gpa": "4.0",
+      "location": "서울시 강남구"
+    }
+  ],
+  "experience": [
+    {
+      "period": "1년",
+      "company": "테크스타트업",
+      "term": "2022.01~2023.01",
+      "team": "프론트엔드팀, 주니어 개발자",
+      "task": "React 기반 웹 애플리케이션 개발",
+      "project": {
+        "name": "우리 팀 소개 페이지 함께 만들기",
+        "term": "2026.01~2026.01",
+        "detail": "git과 GitHub를 이용해서 어떻게 팀원들과 소통하고 코드를 관리하는지 그 과정 자체를 배우는 것이 핵심"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "우리팀 소개 페이지 함께 만들기",
+      "description": "git과 GitHub를 이용해서 어떻게 팀원들과 소통하고 코드를 관리하는지 그 과정 자체를 배우는 것이 핵",
+      "image": "image/p1.png",
+      "link": "project.html"
+    }
+  ]
+}
+
